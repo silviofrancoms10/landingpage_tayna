@@ -1,0 +1,88 @@
+/* Variaveis globais */
+:root{
+    --white-color: white;
+    --black-color: black;
+    --color-primary: white;
+    --color-secondary: #212529;
+    --color-border: #a1a1a1;
+    --color-border-secondary: crimson;
+    --gap: 3rem;
+    --gap-sm: 1.5rem;
+}
+
+/* Reset básico para garantir consistência em diferentes navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+}
+
+
+.main-bg{
+    /* background: linear-gradient(to bottom, #f7cfcf, #ffffff); */
+    background-image: url(../img/imagem_fundo.svg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+
+}
+.footer-content{
+    margin: 0 auto;
+    text-align: center;
+    padding: var(--gap-sm);
+    text-decoration: none;
+
+}
+
+.formato{
+    min-height: 100vh;
+}
+
+.text-shadow-custom {
+    text-shadow: 2px 2px 3px var(--color-secondary); 
+}
+
+.text-shadow-custom-light {
+    text-shadow: 2px 2px 3px var(--color-primary); 
+}
+
+.h1-tamanho{
+    font-size: 3.8rem;
+}
+
+.h2-tamanho{
+    font-size: 2.2rem;
+}
+
+
+@media (min-width: 768px) {
+    
+
+    .main-content {
+        max-width: 100rem; /* Ajusta a largura do conteúdo para telas grandes */
+    }
+
+    .h1-tamanho {
+        font-size: 4.5rem; /* Aumenta o tamanho do texto no desktop */
+    }
+
+    .h2-tamanho {
+        font-size: 3rem; /* Aumenta o tamanho do subtítulo */
+    }
+
+}
